@@ -1,0 +1,15 @@
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    justify-content: start;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    nav ul {
+        background-color: brown;
+    }
+}
