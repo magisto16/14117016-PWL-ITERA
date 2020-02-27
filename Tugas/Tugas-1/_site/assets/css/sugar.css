@@ -9,7 +9,9 @@ nav ul {
 }
 
 nav li {
-    flex: 1;
+    justify-content: start;
+    margin-top: 0px;
+    margin: 15px;
 }
 
 nav li a {
