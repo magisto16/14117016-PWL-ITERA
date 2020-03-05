@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+<link rel="stylesheet" href="/assets/css/sugar.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body id="body" onload="myFunction()">
+    {%include "navigasi.njk" %}
+    <section>
+        {{content | safe}}
+    </section>
+
+    <script>
+        hours = new Date().getHours();
+        minutes = new Date().getMinutes();
+        
+        function myFunction() {
+            if ((hours >= 18) && (minutes > 00) ) {
+                document.getElementById("body").className = "nightmode";
+            }
+        }
+    </script>
+
+</body>
+</html>
