@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="/assets/css/sugar.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body id="body" onload="myFunction()">
     <div class="col-12 col-s-12 nav_bar">
 <nav>
     <ul>
@@ -25,5 +25,17 @@
     <p> Anda berada di Halaman Utama </p>
 </div>
     </section>
+
+    <script>
+        hours = new Date().getHours();
+        minutes = new Date().getMinutes();
+        
+        function myFunction() {
+            if ((hours >= 18) && (minutes > 00) ) {
+                document.getElementById("body").className = "nightmode";
+            }
+        }
+    </script>
+
 </body>
 </html>

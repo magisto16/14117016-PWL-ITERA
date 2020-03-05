@@ -149,3 +149,8 @@ section h3 {
 section p {
     font-family: 'Merriweather';
 }
+
+.nightmode {
+    background-color: black;
+    color: white;
+}
